@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.output-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.output-group textarea {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+  background: #f8fafc;
+  color: #1e293b;
+  font-weight: bold;
+  height: 100px;
+  resize: vertical;
+  word-break: break-all;
+}
+
+.btn-icon {
+  width: 45px;
+  height: 45px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.btn-icon:hover {
+  background: #4338ca;
+}
+
+.btn-icon:active {
+  transform: scale(0.95);
+}
+
+/* Güvenlik Çubuğu */
+.strength-container {
+  margin-bottom: 20px;
+}
+
+.strength-bar-wrapper {
+  height: 8px;
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.strength-bar {
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.strength-text {
+  font-size: 13px;
+  color: #64748b;
+  display: block;
+  text-align: right;
+}
+
+/* Seçenekler */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #334155;
+}
+
+.option-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #4f46e5;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #334155;
+}
+
+.number-input {
+  width: 70px;
+  padding: 4px 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #4f46e5;
+  cursor: pointer;
+}
+
+.btn-generate {
+  width: 100%;
+  padding: 14px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-generate:hover {
+  background: #4338ca;
+}
