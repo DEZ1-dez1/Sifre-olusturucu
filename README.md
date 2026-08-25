@@ -1,7 +1,7 @@
 # 🔐 Güvenli Şifre Oluşturucu & Güvenlik Analiz Aracı
 
 ![Lisans: MIT](https://img.shields.io/badge/Lisans-MIT-blue.svg)
-![PR'lar Açık](https://img.shields.io/badge/PR'lar-kabul_edilir-brightgreen.svg)
+![Status: Live](https://img.shields.io/badge/status-live-brightgreen)
 ![tech](https://img.shields.io/badge/tech-VanillaJS%20%7C%20CSS3%20%7C%20HTML5-orange)
 
 Özelleştirilebilir parametrelerle 1500 karaktere kadar yüksek güvenlikli şifreler üreten, dinamik güvenlik analizi sunan ve Bootstrap Icons entegrasyonuna sahip açık kaynaklı web uygulaması.
