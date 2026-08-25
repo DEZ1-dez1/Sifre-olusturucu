@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şifre Oluşturucu</title>
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Harici CSS Dosyası -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Şifre Oluşturucu</h2>
+
+    <!-- Şifre Kutusu ve Kopyalama Butonu -->
+    <div class="output-group">
+      <textarea id="password" readonly placeholder="Şifreniz..."></textarea>
+      <button class="btn-icon" id="copyBtn" title="Kopyala">
+        <i class="bi bi-clipboard" id="copyIcon"></i>
+      </button>
+    </div>
+
+    <!-- Güvenlik Barı -->
+    <div class="strength-container">
+      <div class="strength-bar-wrapper">
+        <div class="strength-bar" id="strengthBar"></div>
+      </div>
+      <span class="strength-text" id="strengthText">Güvenlik: -</span>
+    </div>
+
+    <!-- Seçenekler -->
+    <div class="options">
+      <div class="slider-container">
+        <div class="slider-header">
+          <span>Şifre Uzunluğu</span>
+          <input type="number" id="lengthInput" class="number-input" min="4" max="1500" value="16">
+        </div>
+        <input type="range" id="lengthSlider" min="4" max="1500" value="16">
+      </div>
+
+      <label class="option-item">
+        <span>Büyük Harf (A-Z)</span>
+        <input type="checkbox" id="uppercase" checked>
+      </label>
+
+      <label class="option-item">
+        <span>Küçük Harf (a-z)</span>
+        <input type="checkbox" id="lowercase" checked>
+      </label>
+
+      <label class="option-item">
+        <span>Sayılar (0-9)</span>
+        <input type="checkbox" id="numbers" checked>
+      </label>
+
+      <label class="option-item">
+        <span>Semboller (!@#$%)</span>
+        <input type="checkbox" id="symbols" checked>
+      </label>
+    </div>
+
+    <!-- Yenileme Butonu -->
+    <button class="btn-generate" id="generateBtn">
+      <i class="bi bi-arrow-clockwise"></i> Yeni Şifre Oluştur
+    </button>
+  </div>
+
+  <!-- Harici JS Dosyası -->
+  <script src="script.js"></script>
+</body>
+</html>
